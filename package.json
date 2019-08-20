@@ -38,7 +38,7 @@
     "precommit": "lint-staged",
     "lint": "eslint src",
     "prebuild": "rimraf dist",
-    "build": "babel src --out-dir dist --ignore '**/*.test.js'",
+    "build": "echo '*************** compiling Flow' && babel src --out-dir dist --ignore '**/*.test.js'",
     "test": "jest src",
     "flow": "flow"
   },
